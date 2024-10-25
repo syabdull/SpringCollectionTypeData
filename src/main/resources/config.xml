@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.Entity.Student" id="std1">
+        <property name="name" value="Abdulla" />
+
+        <property name="hobbies">
+            <list>
+                <value>eat</value>
+                <value>sleep</value>
+                <value>repeat</value>
+                <value>code</value>
+                <value>eat</value>
+                <value>sleep</value>
+                <value>repeat</value>
+                <value>code</value>
+            </list>
+        </property>
+        <property name="pets">
+                <map>
+                    <entry key="dogs" value="20" />
+                    <entry key="cats" value="15" />
+                    <entry key="rabbits" value="5" />
+                    <entry key="birds" value="10" />
+                    <entry key="snakes" value="3" />
+                </map>
+
+        </property>
+        <property name="mySet">
+            <set>
+                <value>dog</value>
+                <value>monkey</value>
+                <value>frog</value>
+                <value>color</value>
+            </set>
+        </property>
+
+    </bean>
+
+</beans>
